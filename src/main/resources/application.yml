@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: create-drop
+    database-platform:
+      org.hibernate.dialect.MySQL5InnoDBDialect
+
+  datasource:
+    url: jdbc:mysql://mysql:3306/demo?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
